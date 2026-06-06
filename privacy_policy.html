@@ -1,324 +1,282 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ExamTrack - Privacy Policy</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Segoe UI', Arial, sans-serif; background: #f5f7fa; color: #333; }
-        
-        .header {
-            background: linear-gradient(135deg, #1565C0, #1976D2);
-            padding: 40px 20px;
-            
-            text-align: center;
-            color: white;
-        }
-        .header img {
-            width: 70px;
-            height: 70px;
-            background: rgba(255,255,255,0.2);
-            border-radius: 16px;
-            padding: 12px;
-            margin-bottom: 16px;
-        }
-        .header h1 { font-size: 28px; font-weight: 700; margin-bottom: 8px; }
-        .header p { font-size: 14px; opacity: 0.8; }
-        .header .badge {
-            display: inline-block;
-            background: rgba(255,255,255,0.2);
-            padding: 6px 16px;
-            border-radius: 20px;
-            font-size: 13px;
-            margin-top: 12px;
-        }
-
-        .container { max-width: 800px; margin: 0 auto; padding: 30px 20px; }
-
-        .card {
-            background: white;
-            border-radius: 16px;
-            padding: 24px;
-            margin-bottom: 16px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-        }
-
-        .section-title {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            margin-bottom: 16px;
-        }
-        .section-icon {
-            width: 40px;
-            height: 40px;
-            background: #e3f2fd;
-            border-radius: 10px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 20px;
-            flex-shrink: 0;
-        }
-        .section-title h2 {
-            font-size: 17px;
-            font-weight: 700;
-            color: #1565C0;
-        }
-
-        p { font-size: 14px; line-height: 1.7; color: #555; margin-bottom: 10px; }
-
-        ul { padding-left: 0; list-style: none; }
-        ul li {
-            font-size: 14px;
-            color: #555;
-            padding: 6px 0;
-            padding-left: 24px;
-            position: relative;
-            line-height: 1.5;
-        }
-        ul li::before {
-            content: '✓';
-            position: absolute;
-            left: 0;
-            color: #1565C0;
-            font-weight: bold;
-        }
-
-        .highlight-box {
-            background: #e8f5e9;
-            border-left: 4px solid #4CAF50;
-            border-radius: 8px;
-            padding: 14px 16px;
-            margin: 12px 0;
-        }
-        .highlight-box p { color: #2e7d32; margin: 0; font-weight: 500; }
-
-        .warning-box {
-            background: #fff3e0;
-            border-left: 4px solid #FF9800;
-            border-radius: 8px;
-            padding: 14px 16px;
-            margin: 12px 0;
-        }
-        .warning-box p { color: #e65100; margin: 0; }
-
-        .contact-card {
-            background: linear-gradient(135deg, #1565C0, #1976D2);
-            border-radius: 16px;
-            padding: 24px;
-            color: white;
-            text-align: center;
-        }
-        .contact-card h2 { font-size: 18px; margin-bottom: 8px; }
-        .contact-card p { color: rgba(255,255,255,0.8); margin-bottom: 4px; }
-        .contact-card a {
-            color: white;
-            text-decoration: none;
-            font-weight: 600;
-        }
-
-        .footer {
-            text-align: center;
-            padding: 20px;
-            color: #999;
-            font-size: 12px;
-        }
-
-        .tag {
-            display: inline-block;
-            background: #e3f2fd;
-            color: #1565C0;
-            padding: 4px 12px;
-            border-radius: 20px;
-            font-size: 12px;
-            font-weight: 600;
-            margin: 4px 4px 4px 0;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ExamTrack - Privacy Policy</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f5f7fa; color: #1a1a2e; line-height: 1.7; }
+    .header { background: linear-gradient(135deg, #1565C0, #1976D2); padding: 40px 20px; text-align: center; color: white; }
+    .header .icon { font-size: 48px; margin-bottom: 12px; }
+    .header h1 { font-size: 28px; font-weight: 700; margin-bottom: 6px; }
+    .header .subtitle { font-size: 14px; opacity: 0.85; margin-bottom: 10px; }
+    .header .date { background: rgba(255,255,255,0.2); display: inline-block; padding: 6px 16px; border-radius: 20px; font-size: 13px; }
+    .badge { background: #10B981; color: white; display: inline-block; padding: 8px 20px; border-radius: 8px; font-size: 13px; font-weight: 600; margin: 16px auto; display: block; width: fit-content; }
+    .container { max-width: 800px; margin: 0 auto; padding: 20px; }
+    .section { background: white; border-radius: 16px; padding: 28px; margin-bottom: 20px; box-shadow: 0 2px 12px rgba(0,0,0,0.06); }
+    .section-header { display: flex; align-items: center; gap: 12px; margin-bottom: 18px; padding-bottom: 14px; border-bottom: 2px solid #f0f4ff; }
+    .section-icon { font-size: 24px; }
+    .section-title { font-size: 18px; font-weight: 700; color: #1565C0; }
+    p { margin-bottom: 12px; font-size: 15px; color: #374151; }
+    ul { margin: 10px 0 14px 20px; }
+    ul li { margin-bottom: 8px; font-size: 15px; color: #374151; }
+    table { width: 100%; border-collapse: collapse; margin: 14px 0; }
+    table th { background: #f0f4ff; padding: 10px 14px; text-align: left; font-weight: 600; font-size: 14px; color: #1565C0; }
+    table td { padding: 10px 14px; border-bottom: 1px solid #f0f4ff; font-size: 14px; color: #374151; }
+    .highlight { background: #f0f4ff; border-left: 4px solid #1565C0; padding: 14px 18px; border-radius: 0 8px 8px 0; margin: 14px 0; font-size: 14px; }
+    .warning { background: #fff8e7; border-left: 4px solid #F59E0B; padding: 14px 18px; border-radius: 0 8px 8px 0; margin: 14px 0; font-size: 14px; }
+    .footer { background: #1565C0; color: white; text-align: center; padding: 30px 20px; margin-top: 30px; }
+    .footer p { color: rgba(255,255,255,0.85); margin-bottom: 6px; font-size: 14px; }
+    .footer .email { color: white; font-weight: 600; font-size: 15px; }
+    a { color: #1565C0; }
+    strong { color: #1a1a2e; }
+  </style>
 </head>
 <body>
 
-    <!-- Header -->
-    <div class="header">
-        <div style="font-size: 48px; margin-bottom: 12px;">🎓</div>
-        <h1>Privacy Policy</h1>
-        <p>ExamTrack — India's Smartest Govt Job Guide</p>
-        <div class="badge">📅 Last Updated: June 1, 2026</div>
+<div class="header">
+  <div class="icon">🎓</div>
+  <h1>Privacy Policy</h1>
+  <p class="subtitle">ExamTrack — India's Govt Job Guide</p>
+  <div class="date">📅 Last Updated: June 2026</div>
+</div>
+
+<div class="container">
+
+  <div class="badge">✅ We never sell your personal data to third parties</div>
+
+  <!-- Section 1: Introduction -->
+  <div class="section">
+    <div class="section-header">
+      <span class="section-icon">📋</span>
+      <span class="section-title">1. Introduction</span>
+    </div>
+    <p>ExamTrack ("we", "our", or "us") is a mobile application developed and operated by <strong>Rajan Ghuman</strong>, an individual developer based in Amritsar, Punjab, India.</p>
+    <p>ExamTrack helps users in North India track government job notifications, exam dates, results, admit cards, and study material.</p>
+    <p>This Privacy Policy explains what personal data we collect, how we use it, with whom we share it, and what rights you have over your data. By using ExamTrack, you agree to the practices described in this policy.</p>
+    <div class="highlight">
+      <strong>Legal Compliance:</strong> This Privacy Policy is compliant with India's <strong>Digital Personal Data Protection Act, 2023 (DPDP Act)</strong> and the DPDP Rules, 2025. As a Data Fiduciary under the Act, we process your personal data only for lawful purposes with your consent. You have the right to access, correct, and erase your personal data as described in Section 7 of this policy. This policy also complies with Google Play Store requirements and the Information Technology Act, 2000.
+    </div>
+  </div>
+
+  <!-- Section 2: Data We Collect -->
+  <div class="section">
+    <div class="section-header">
+      <span class="section-icon">📊</span>
+      <span class="section-title">2. Information We Collect</span>
     </div>
 
-    <div class="container">
+    <p><strong>2.1 Information You Provide Directly</strong></p>
+    <p>When you create an account or use the app, we collect:</p>
+    <ul>
+      <li>Full Name</li>
+      <li>Email Address</li>
+      <li>Phone Number</li>
+      <li>State / Location (e.g., Punjab, Haryana, UP)</li>
+      <li>Educational Qualification</li>
+      <li>Category (General, OBC, SC, ST, EWS)</li>
+      <li>Job category preferences (SSC, Railway, Banking, etc.)</li>
+    </ul>
 
-        <!-- Intro -->
-        <div class="card">
-            <p>Welcome to <strong>ExamTrack</strong>! We are committed to protecting your privacy and ensuring your personal information is handled safely and responsibly. This Privacy Policy explains what information we collect, how we use it, and your rights regarding your data.</p>
-            <div class="highlight-box">
-                <p>✅ We never sell your personal data to third parties.</p>
-            </div>
-        </div>
+    <p><strong>2.2 Information Generated by Your Activity</strong></p>
+    <p>As you use the app, we store:</p>
+    <ul>
+      <li>Jobs you have saved</li>
+      <li>Jobs you have tracked (with application status)</li>
+      <li>Jobs you have marked as applied</li>
+      <li>Results and marks you have entered</li>
+      <li>Notification preferences you set</li>
+    </ul>
 
-        <!-- Information We Collect -->
-        <div class="card">
-            <div class="section-title">
-                <div class="section-icon">📋</div>
-                <h2>Information We Collect</h2>
-            </div>
-            <p>When you create an account on ExamTrack, we collect:</p>
-            <ul>
-                <li>Full Name</li>
-                <li>Email Address</li>
-                <li>Phone Number</li>
-                <li>Date of Birth</li>
-                <li>State / Location</li>
-                <li>Educational Qualification</li>
-                <li>Job category preferences</li>
-            </ul>
-        </div>
+    <p><strong>2.3 Information Collected Automatically</strong></p>
+    <p>Firebase (operated by Google) may automatically collect crash reports and error logs to help us fix bugs. We do not run our own analytics beyond this.</p>
 
-        <!-- How We Use -->
-        <div class="card">
-            <div class="section-title">
-                <div class="section-icon">⚙️</div>
-                <h2>How We Use Your Information</h2>
-            </div>
-            <ul>
-                <li>To create and manage your ExamTrack account</li>
-                <li>To show you relevant government job notifications</li>
-                <li>To send push notifications about new jobs and exam dates</li>
-                <li>To personalize your job recommendations</li>
-                <li>To calculate your eligibility for various exams</li>
-                <li>To improve our app and services</li>
-            </ul>
-        </div>
-
-        <!-- Data Storage -->
-        <div class="card">
-            <div class="section-title">
-                <div class="section-icon">🔒</div>
-                <h2>Data Storage & Security</h2>
-            </div>
-            <p>Your data is stored securely on <strong>Google Firebase</strong> servers, which are protected by industry-leading security measures including:</p>
-            <ul>
-                <li>End-to-end encryption</li>
-                <li>Secure HTTPS connections</li>
-                <li>Firebase Authentication for account security</li>
-                <li>Regular security audits by Google</li>
-            </ul>
-            <div class="highlight-box">
-                <p>🔐 Your data is encrypted and stored on Google's secure cloud servers in India region.</p>
-            </div>
-        </div>
-
-        <!-- Third Party -->
-        <div class="card">
-            <div class="section-title">
-                <div class="section-icon">🤝</div>
-                <h2>Third Party Services</h2>
-            </div>
-            <p>ExamTrack uses the following trusted third-party services:</p>
-            <br>
-            <span class="tag">Google Firebase</span>
-            <span class="tag">Firebase Auth</span>
-            <span class="tag">Cloud Firestore</span>
-            <span class="tag">Firebase Messaging</span>
-            <br><br>
-            <p>These services have their own privacy policies. We encourage you to review Google's Privacy Policy at <strong>policies.google.com</strong></p>
-        </div>
-
-        <!-- Data Sharing -->
-        <div class="card">
-            <div class="section-title">
-                <div class="section-icon">🚫</div>
-                <h2>Data Sharing</h2>
-            </div>
-            <div class="highlight-box">
-                <p>✅ We do NOT sell, trade, or rent your personal information to any third parties.</p>
-            </div>
-            <p>We may share your information only in these cases:</p>
-            <ul>
-                <li>When required by law or court order</li>
-                <li>To protect the rights and safety of our users</li>
-                <li>With your explicit consent</li>
-            </ul>
-        </div>
-
-        <!-- Your Rights -->
-        <div class="card">
-            <div class="section-title">
-                <div class="section-icon">⚖️</div>
-                <h2>Your Rights</h2>
-            </div>
-            <p>As an ExamTrack user, you have the following rights:</p>
-            <ul>
-                <li>Access your personal data anytime</li>
-                <li>Update or correct your information</li>
-                <li>Delete your account and all associated data</li>
-                <li>Opt out of push notifications</li>
-                <li>Request a copy of your data</li>
-            </ul>
-        </div>
-
-        <!-- Age -->
-        <div class="card">
-            <div class="section-title">
-                <div class="section-icon">👤</div>
-                <h2>Age Requirements</h2>
-            </div>
-            <p>ExamTrack is intended for users aged <strong>18 years and above</strong>. We do not knowingly collect personal information from children under 13 years of age.</p>
-            <div class="warning-box">
-                <p>⚠️ If you are under 18, please use this app with parental guidance.</p>
-            </div>
-        </div>
-
-        <!-- Notifications -->
-        <div class="card">
-            <div class="section-title">
-                <div class="section-icon">🔔</div>
-                <h2>Push Notifications</h2>
-            </div>
-            <p>ExamTrack sends push notifications for:</p>
-            <ul>
-                <li>New government job vacancies</li>
-                <li>Exam date reminders</li>
-                <li>Admit card availability</li>
-                <li>Result declarations</li>
-                <li>Application deadline reminders</li>
-            </ul>
-            <p style="margin-top: 10px;">You can disable notifications anytime from your phone settings or within the ExamTrack app.</p>
-        </div>
-
-        <!-- Changes -->
-        <div class="card">
-            <div class="section-title">
-                <div class="section-icon">📝</div>
-                <h2>Changes to This Policy</h2>
-            </div>
-            <p>We may update this Privacy Policy from time to time. We will notify you of any significant changes by:</p>
-            <ul>
-                <li>Sending a push notification through the app</li>
-                <li>Updating the "Last Updated" date at the top of this page</li>
-            </ul>
-            <p style="margin-top: 10px;">Continued use of ExamTrack after changes constitutes acceptance of the updated policy.</p>
-        </div>
-
-        <!-- Contact -->
-        <div class="contact-card">
-            <div style="font-size: 36px; margin-bottom: 12px;">📧</div>
-            <h2>Contact Us</h2>
-            <p>Have questions about this Privacy Policy?</p>
-            <br>
-            <p>Email: <a href="mailto:rajanghuman13@gmail.com">rajanghuman13@gmail.com</a></p>
-            <p>Developer: Rajan Ghuman</p>
-            <p>Location: Amritsar, Punjab, India</p>
-            <p>App: ExamTrack</p>
-        </div>
-
-        <div class="footer">
-            <p>© 2026 ExamTrack. All rights reserved.</p>
-            <p>Made with ❤️ in Punjab, India</p>
-        </div>
-
+    <div class="highlight">
+      <strong>We do NOT collect:</strong> Your location, camera/microphone data, contacts, call logs, device advertising ID, or browsing history outside the app.
     </div>
+  </div>
+
+  <!-- Section 3: How We Use Data -->
+  <div class="section">
+    <div class="section-header">
+      <span class="section-icon">⚙️</span>
+      <span class="section-title">3. How We Use Your Information</span>
+    </div>
+    <table>
+      <tr><th>Purpose</th><th>Data Used</th></tr>
+      <tr><td>Create and manage your account</td><td>Name, email, phone</td></tr>
+      <tr><td>Show personalized job recommendations</td><td>State, category, qualification</td></tr>
+      <tr><td>Save your job tracking history</td><td>Tracked/saved/applied jobs</td></tr>
+      <tr><td>Send exam notifications and alerts</td><td>Email, notification preferences</td></tr>
+      <tr><td>Fix bugs and improve the app</td><td>Crash logs</td></tr>
+      <tr><td>Provide relevant study material</td><td>Preferred exam categories</td></tr>
+    </table>
+    <div class="highlight">
+      <strong>We do NOT use your data for:</strong> Selling to third parties, targeted advertising, profiling for non-app purposes, or sharing with recruiters or employers.
+    </div>
+  </div>
+
+  <!-- Section 4: Data Storage -->
+  <div class="section">
+    <div class="section-header">
+      <span class="section-icon">🔒</span>
+      <span class="section-title">4. Data Storage and Security</span>
+    </div>
+    <ul>
+      <li>All user data is stored on <strong>Google Firebase</strong> (Firebase Authentication and Cloud Firestore) on Google's secure, encrypted cloud infrastructure.</li>
+      <li>We implement Firebase security rules so only you can access your own data.</li>
+      <li>Your password is never stored by us — Firebase Authentication handles it with industry-standard encryption.</li>
+      <li>All data transmission uses HTTPS/TLS encryption.</li>
+    </ul>
+    <div class="warning">
+      <strong>Data Retention:</strong> Your data is kept as long as your account is active. If you delete your account, your personal data will be permanently deleted within <strong>30 days</strong>. You may request account deletion by emailing us at rajanghuman13@gmail.com.
+    </div>
+  </div>
+
+  <!-- Section 5: Third Party Services -->
+  <div class="section">
+    <div class="section-header">
+      <span class="section-icon">🤝</span>
+      <span class="section-title">5. Third Party Services</span>
+    </div>
+    <p>ExamTrack uses the following third party services. Each has its own privacy policy:</p>
+    <table>
+      <tr><th>Service</th><th>Purpose</th><th>Privacy Policy</th></tr>
+      <tr><td>Firebase Authentication (Google)</td><td>User login and account management</td><td>policies.google.com/privacy</td></tr>
+      <tr><td>Cloud Firestore (Google)</td><td>Storing your data securely</td><td>policies.google.com/privacy</td></tr>
+      <tr><td>Firebase Cloud Messaging (Google)</td><td>Push notifications</td><td>policies.google.com/privacy</td></tr>
+    </table>
+    <div class="highlight">
+      We do <strong>not</strong> currently use any advertising networks (AdMob), social media SDKs, payment processing, or third party analytics.
+    </div>
+  </div>
+
+  <!-- Section 6: Data Sharing -->
+  <div class="section">
+    <div class="section-header">
+      <span class="section-icon">🚫</span>
+      <span class="section-title">6. Data Sharing</span>
+    </div>
+    <p>We do <strong>not</strong> sell, rent, or trade your personal data to any third party.</p>
+    <p>We may share data only in these limited circumstances:</p>
+    <ul>
+      <li><strong>With Google/Firebase:</strong> As necessary to provide cloud storage and authentication</li>
+      <li><strong>Legal compliance:</strong> If required by Indian law, court order, or government authority</li>
+      <li><strong>Safety:</strong> If we believe disclosure is necessary to prevent harm to you or others</li>
+    </ul>
+    <p>We will never share your data with employers, recruiters, coaching institutes, or marketing companies.</p>
+  </div>
+
+  <!-- Section 7: Your Rights -->
+  <div class="section">
+    <div class="section-header">
+      <span class="section-icon">⚖️</span>
+      <span class="section-title">7. Your Rights Under India's DPDP Act 2023</span>
+    </div>
+    <p>As a user in India, you have the following rights under the Digital Personal Data Protection Act, 2023:</p>
+    <ul>
+      <li><strong>Right to Access:</strong> Request a copy of the personal data we hold about you</li>
+      <li><strong>Right to Correction:</strong> Update or correct your data through Edit Profile or by contacting us</li>
+      <li><strong>Right to Erasure:</strong> Request deletion of your account and all associated data within 30 days</li>
+      <li><strong>Right to Withdraw Consent:</strong> Withdraw consent at any time by deleting your account</li>
+      <li><strong>Right to Grievance Redressal:</strong> File a complaint with us or with India's Data Protection Board</li>
+      <li><strong>Right to Nominate:</strong> Nominate another person to exercise your rights on your behalf</li>
+    </ul>
+    <p>To exercise any of these rights, contact our Grievance Officer:</p>
+    <div class="highlight">
+      <strong>Grievance Officer:</strong> Rajan Ghuman<br>
+      <strong>Email:</strong> rajanghuman13@gmail.com<br>
+      <strong>Response time:</strong> Within 7 business days
+    </div>
+  </div>
+
+  <!-- Section 8: Children's Privacy -->
+  <div class="section">
+    <div class="section-header">
+      <span class="section-icon">👤</span>
+      <span class="section-title">8. Age Requirements</span>
+    </div>
+    <p>ExamTrack is intended for users who are <strong>18 years of age or older</strong> (government job applicants).</p>
+    <p>We do not knowingly collect personal data from anyone under the age of 18. If we discover that a user is under 18, we will delete their account and associated data promptly.</p>
+    <div class="warning">
+      ⚠️ If you are under 18, please do not use this app. If you believe your child has provided us with personal data, please contact us immediately at rajanghuman13@gmail.com.
+    </div>
+  </div>
+
+  <!-- Section 9: Notifications -->
+  <div class="section">
+    <div class="section-header">
+      <span class="section-icon">🔔</span>
+      <span class="section-title">9. Push Notifications</span>
+    </div>
+    <p>ExamTrack may send you push notifications about:</p>
+    <ul>
+      <li>New government job vacancies</li>
+      <li>Exam date reminders</li>
+      <li>Admit card availability</li>
+      <li>Result declarations</li>
+      <li>Application deadline reminders</li>
+    </ul>
+    <p>You can opt-in or opt-out of notifications at any time through your phone's notification settings or within the ExamTrack app settings. We do not send promotional messages from third parties.</p>
+  </div>
+
+  <!-- Section 10: External Links -->
+  <div class="section">
+    <div class="section-header">
+      <span class="section-icon">🔗</span>
+      <span class="section-title">10. Links to External Websites</span>
+    </div>
+    <p>The app contains links to official government websites (ssc.gov.in, ibps.in, etc.) for job applications, results, and admit cards. These external websites have their own privacy policies. We are not responsible for their content or privacy practices.</p>
+  </div>
+
+  <!-- Section 11: Changes -->
+  <div class="section">
+    <div class="section-header">
+      <span class="section-icon">📝</span>
+      <span class="section-title">11. Changes to This Policy</span>
+    </div>
+    <p>We may update this Privacy Policy from time to time. When we do:</p>
+    <ul>
+      <li>The "Last Updated" date at the top will change</li>
+      <li>We will notify you through the app if the changes are significant</li>
+      <li>Continued use of the app after changes means you accept the updated policy</li>
+    </ul>
+  </div>
+
+  <!-- Section 12: Contact -->
+  <div class="section">
+    <div class="section-header">
+      <span class="section-icon">📧</span>
+      <span class="section-title">12. Contact Us</span>
+    </div>
+    <p>For any privacy-related questions, requests, or grievances:</p>
+    <div class="highlight">
+      <strong>Grievance Officer:</strong> Rajan Ghuman<br>
+      <strong>Email:</strong> rajanghuman13@gmail.com<br>
+      <strong>App:</strong> ExamTrack<br>
+      <strong>Location:</strong> Amritsar, Punjab, India<br>
+      <strong>Response time:</strong> Within 7 business days
+    </div>
+    <p>For data deletion requests, email with subject: <strong>"Data Deletion Request — [Your Registered Email]"</strong></p>
+  </div>
+
+  <!-- Section 13: Governing Law -->
+  <div class="section">
+    <div class="section-header">
+      <span class="section-icon">⚖️</span>
+      <span class="section-title">13. Governing Law</span>
+    </div>
+    <p>This Privacy Policy is governed by the laws of India, including the <strong>Digital Personal Data Protection Act, 2023</strong> and the Information Technology Act, 2000. Any disputes will be subject to the jurisdiction of courts in Punjab, India.</p>
+  </div>
+
+</div>
+
+<div class="footer">
+  <p>© 2026 ExamTrack. All rights reserved.</p>
+  <p class="email">rajanghuman13@gmail.com</p>
+  <p>Made with ❤️ in Punjab, India</p>
+</div>
+
 </body>
 </html>
