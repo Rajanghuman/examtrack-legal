@@ -1,282 +1,309 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ExamTrack - Terms of Service</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Segoe UI', Arial, sans-serif; background: #f5f7fa; color: #333; }
-
-        .header {
-            background: linear-gradient(135deg, #1565C0, #1976D2);
-            padding: 40px 20px;
-            text-align: center;
-            color: white;
-        }
-        .header h1 { font-size: 28px; font-weight: 700; margin-bottom: 8px; }
-        .header p { font-size: 14px; opacity: 0.8; }
-        .header .badge {
-            display: inline-block;
-            background: rgba(255,255,255,0.2);
-            padding: 6px 16px;
-            border-radius: 20px;
-            font-size: 13px;
-            margin-top: 12px;
-        }
-
-        .container { max-width: 800px; margin: 0 auto; padding: 30px 20px; }
-
-        .card {
-            background: white;
-            border-radius: 16px;
-            padding: 24px;
-            margin-bottom: 16px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-        }
-
-        .section-title {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            margin-bottom: 16px;
-        }
-        .section-icon {
-            width: 40px;
-            height: 40px;
-            background: #e3f2fd;
-            border-radius: 10px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 20px;
-            flex-shrink: 0;
-        }
-        .section-title h2 { font-size: 17px; font-weight: 700; color: #1565C0; }
-
-        p { font-size: 14px; line-height: 1.7; color: #555; margin-bottom: 10px; }
-
-        ul { padding-left: 0; list-style: none; }
-        ul li {
-            font-size: 14px;
-            color: #555;
-            padding: 6px 0;
-            padding-left: 24px;
-            position: relative;
-            line-height: 1.5;
-        }
-        ul li::before {
-            content: '•';
-            position: absolute;
-            left: 0;
-            color: #1565C0;
-            font-weight: bold;
-            font-size: 18px;
-            line-height: 1.2;
-        }
-
-        .highlight-box {
-            background: #e8f5e9;
-            border-left: 4px solid #4CAF50;
-            border-radius: 8px;
-            padding: 14px 16px;
-            margin: 12px 0;
-        }
-        .highlight-box p { color: #2e7d32; margin: 0; font-weight: 500; }
-
-        .warning-box {
-            background: #fff3e0;
-            border-left: 4px solid #FF9800;
-            border-radius: 8px;
-            padding: 14px 16px;
-            margin: 12px 0;
-        }
-        .warning-box p { color: #e65100; margin: 0; }
-
-        .contact-card {
-            background: linear-gradient(135deg, #1565C0, #1976D2);
-            border-radius: 16px;
-            padding: 24px;
-            color: white;
-            text-align: center;
-        }
-        .contact-card h2 { font-size: 18px; margin-bottom: 8px; }
-        .contact-card p { color: rgba(255,255,255,0.8); margin-bottom: 4px; }
-        .contact-card a { color: white; text-decoration: none; font-weight: 600; }
-
-        .footer {
-            text-align: center;
-            padding: 20px;
-            color: #999;
-            font-size: 12px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ExamTrack - Terms of Service</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f5f7fa; color: #1a1a2e; line-height: 1.7; }
+    .header { background: linear-gradient(135deg, #1565C0, #1976D2); padding: 40px 20px; text-align: center; color: white; }
+    .header .icon { font-size: 48px; margin-bottom: 12px; }
+    .header h1 { font-size: 28px; font-weight: 700; margin-bottom: 6px; }
+    .header .subtitle { font-size: 14px; opacity: 0.85; margin-bottom: 10px; }
+    .header .date { background: rgba(255,255,255,0.2); display: inline-block; padding: 6px 16px; border-radius: 20px; font-size: 13px; }
+    .badge { background: #10B981; color: white; display: inline-block; padding: 8px 20px; border-radius: 8px; font-size: 13px; font-weight: 600; margin: 16px auto; display: block; width: fit-content; }
+    .container { max-width: 800px; margin: 0 auto; padding: 20px; }
+    .section { background: white; border-radius: 16px; padding: 28px; margin-bottom: 20px; box-shadow: 0 2px 12px rgba(0,0,0,0.06); }
+    .section-header { display: flex; align-items: center; gap: 12px; margin-bottom: 18px; padding-bottom: 14px; border-bottom: 2px solid #f0f4ff; }
+    .section-icon { font-size: 24px; }
+    .section-title { font-size: 18px; font-weight: 700; color: #1565C0; }
+    p { margin-bottom: 12px; font-size: 15px; color: #374151; }
+    ul { margin: 10px 0 14px 20px; }
+    ul li { margin-bottom: 8px; font-size: 15px; color: #374151; }
+    .highlight { background: #f0f4ff; border-left: 4px solid #1565C0; padding: 14px 18px; border-radius: 0 8px 8px 0; margin: 14px 0; font-size: 14px; }
+    .warning { background: #fff8e7; border-left: 4px solid #F59E0B; padding: 14px 18px; border-radius: 0 8px 8px 0; margin: 14px 0; font-size: 14px; }
+    .danger { background: #fff0f0; border-left: 4px solid #EF4444; padding: 14px 18px; border-radius: 0 8px 8px 0; margin: 14px 0; font-size: 14px; }
+    .footer { background: #1565C0; color: white; text-align: center; padding: 30px 20px; margin-top: 30px; }
+    .footer p { color: rgba(255,255,255,0.85); margin-bottom: 6px; font-size: 14px; }
+    .footer .email { color: white; font-weight: 600; font-size: 15px; }
+    a { color: #1565C0; }
+    strong { color: #1a1a2e; }
+  </style>
 </head>
 <body>
 
-    <div class="header">
-        <div style="font-size: 48px; margin-bottom: 12px;">📜</div>
-        <h1>Terms of Service</h1>
-        <p>ExamTrack — India's Smartest Govt Job Guide</p>
-        <div class="badge">📅 Last Updated: June 1, 2026</div>
+<div class="header">
+  <div class="icon">📜</div>
+  <h1>Terms of Service</h1>
+  <p class="subtitle">ExamTrack — India's Govt Job Guide</p>
+  <div class="date">📅 Last Updated: June 2026</div>
+</div>
+
+<div class="container">
+
+  <div class="badge">✅ By using ExamTrack, you agree to these terms</div>
+
+  <!-- Section 1: Acceptance -->
+  <div class="section">
+    <div class="section-header">
+      <span class="section-icon">✅</span>
+      <span class="section-title">1. Acceptance of Terms</span>
     </div>
+    <p>By downloading, installing, or using ExamTrack ("the App"), you agree to be bound by these Terms of Service ("Terms"). If you do not agree to these Terms, do not use the App.</p>
+    <p>ExamTrack is developed and operated by <strong>Rajan Ghuman</strong>, an individual developer based in Amritsar, Punjab, India ("Developer").</p>
+    <p>These Terms constitute a legally binding agreement between you ("User") and the Developer, governed by the laws of India.</p>
+    <p>By accessing or using ExamTrack, you confirm that:</p>
+    <ul>
+      <li>You are at least <strong>18 years of age</strong></li>
+      <li>You agree to these Terms of Service</li>
+      <li>You agree to our Privacy Policy</li>
+      <li>You have the legal capacity to enter into this agreement</li>
+    </ul>
+  </div>
 
-    <div class="container">
-
-        <div class="card">
-            <p>Welcome to <strong>ExamTrack</strong>! By downloading or using our app, you agree to be bound by these Terms of Service. Please read them carefully before using ExamTrack.</p>
-            <div class="highlight-box">
-                <p>✅ By using ExamTrack, you agree to these terms.</p>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="section-title">
-                <div class="section-icon">✅</div>
-                <h2>Acceptance of Terms</h2>
-            </div>
-            <p>By accessing or using ExamTrack, you confirm that:</p>
-            <ul>
-                <li>You are at least 18 years of age</li>
-                <li>You agree to these Terms of Service</li>
-                <li>You agree to our Privacy Policy</li>
-                <li>You have the legal capacity to enter into this agreement</li>
-            </ul>
-        </div>
-
-        <div class="card">
-            <div class="section-title">
-                <div class="section-icon">📱</div>
-                <h2>Use of the App</h2>
-            </div>
-            <p>ExamTrack is provided for personal, non-commercial use. You agree to:</p>
-            <ul>
-                <li>Use the app only for lawful purposes</li>
-                <li>Not misuse or abuse the app or its services</li>
-                <li>Maintain the security of your account credentials</li>
-                <li>Not attempt to hack, reverse engineer, or disrupt the app</li>
-                <li>Not create multiple accounts for deceptive purposes</li>
-            </ul>
-        </div>
-
-        <div class="card">
-            <div class="section-title">
-                <div class="section-icon">📊</div>
-                <h2>Content Accuracy</h2>
-            </div>
-            <p>ExamTrack provides information about government jobs and exams for informational purposes only.</p>
-            <div class="warning-box">
-                <p>⚠️ Always verify important information such as exam dates, eligibility, and fees from official government websites before applying.</p>
-            </div>
-            <p>We strive for accuracy but cannot guarantee that all information is complete, accurate, or current. We are not responsible for any decisions made based on information provided in the app.</p>
-        </div>
-
-        <div class="card">
-            <div class="section-title">
-                <div class="section-icon">🔐</div>
-                <h2>Account Responsibility</h2>
-            </div>
-            <ul>
-                <li>You are responsible for maintaining the confidentiality of your password</li>
-                <li>You are responsible for all activities that occur under your account</li>
-                <li>Notify us immediately if you suspect unauthorized access</li>
-                <li>Provide accurate and truthful information during registration</li>
-            </ul>
-        </div>
-
-        <div class="card">
-            <div class="section-title">
-                <div class="section-icon">💡</div>
-                <h2>Intellectual Property</h2>
-            </div>
-            <p>All content in ExamTrack is protected by intellectual property laws:</p>
-            <ul>
-                <li>App design, code, and graphics belong to ExamTrack</li>
-                <li>You may not copy, modify, or distribute our content</li>
-                <li>ExamTrack name and logo are our trademarks</li>
-                <li>Government job data is sourced from public sources</li>
-            </ul>
-        </div>
-
-        <div class="card">
-            <div class="section-title">
-                <div class="section-icon">🔔</div>
-                <h2>Notifications</h2>
-            </div>
-            <p>By using ExamTrack, you consent to receive:</p>
-            <ul>
-                <li>Push notifications about new job vacancies</li>
-                <li>Exam date and deadline reminders</li>
-                <li>Admit card and result notifications</li>
-            </ul>
-            <p style="margin-top: 10px;">You can manage notification preferences in the app settings or your device settings.</p>
-        </div>
-
-        <div class="card">
-            <div class="section-title">
-                <div class="section-icon">⚠️</div>
-                <h2>Disclaimer & Limitation of Liability</h2>
-            </div>
-            <p>ExamTrack is provided <strong>"as is"</strong> without any warranties. To the maximum extent permitted by law:</p>
-            <ul>
-                <li>We are not liable for any errors or omissions in job information</li>
-                <li>We are not responsible for missed application deadlines</li>
-                <li>We do not guarantee job placement or exam success</li>
-                <li>We are not liable for any indirect or consequential damages</li>
-            </ul>
-        </div>
-
-        <div class="card">
-            <div class="section-title">
-                <div class="section-icon">🚫</div>
-                <h2>Termination</h2>
-            </div>
-            <p>We reserve the right to suspend or terminate your account if you:</p>
-            <ul>
-                <li>Violate these Terms of Service</li>
-                <li>Provide false information during registration</li>
-                <li>Engage in abusive or fraudulent behavior</li>
-                <li>Attempt to harm the app or other users</li>
-            </ul>
-        </div>
-
-        <div class="card">
-            <div class="section-title">
-                <div class="section-icon">📝</div>
-                <h2>Changes to Terms</h2>
-            </div>
-            <p>We reserve the right to modify these Terms of Service at any time. We will notify you of significant changes through:</p>
-            <ul>
-                <li>Push notification in the app</li>
-                <li>Updating the date at the top of this page</li>
-            </ul>
-            <p style="margin-top: 10px;">Continued use of ExamTrack after changes means you accept the new terms.</p>
-        </div>
-
-        <div class="card">
-            <div class="section-title">
-                <div class="section-icon">⚖️</div>
-                <h2>Governing Law</h2>
-            </div>
-            <p>These Terms of Service are governed by the laws of <strong>India</strong>. Any disputes arising from the use of ExamTrack shall be subject to the exclusive jurisdiction of the courts in <strong>Punjab, India</strong>.</p>
-        </div>
-
-        <div class="contact-card">
-            <div style="font-size: 36px; margin-bottom: 12px;">📧</div>
-            <h2>Contact Us</h2>
-            <p>Have questions about these Terms?</p>
-            <br>
-            <p>Email: <a href="mailto:rajanghuman13@gmail.com">rajanghuman13@gmail.com</a></p>
-            <p>Developer: Rajan Ghuman</p>
-            <p>Location: Amritsar, Punjab, India</p>
-            <p>App: ExamTrack</p>
-        </div>
-
-        <div class="footer">
-            <p>© 2026 ExamTrack. All rights reserved.</p>
-            <p>Made with ❤️ in Punjab, India</p>
-        </div>
-
+  <!-- Section 2: Description -->
+  <div class="section">
+    <div class="section-header">
+      <span class="section-icon">📱</span>
+      <span class="section-title">2. Description of Service</span>
     </div>
+    <p>ExamTrack is a free mobile application that provides:</p>
+    <ul>
+      <li>Government job notifications and listings for North India (SSC, Railway, Banking, Police, Defence, etc.)</li>
+      <li>Job application tracking tools</li>
+      <li>Exam date calendar and admit card updates</li>
+      <li>Result tracking</li>
+      <li>Study material including notes, previous year questions, and mock tests</li>
+      <li>Current affairs updates</li>
+    </ul>
+  </div>
+
+  <!-- Section 3: Use of App -->
+  <div class="section">
+    <div class="section-header">
+      <span class="section-icon">📱</span>
+      <span class="section-title">3. Acceptable Use</span>
+    </div>
+    <p>ExamTrack is provided for personal, non-commercial use. You agree to use the app only for lawful purposes. You must NOT:</p>
+    <ul>
+      <li>Use the App for any illegal activity under Indian law</li>
+      <li>Attempt to hack, reverse engineer, or tamper with the App</li>
+      <li>Scrape, copy, or redistribute content from the App without permission</li>
+      <li>Create multiple accounts for fraudulent or deceptive purposes</li>
+      <li>Impersonate any other person or entity</li>
+      <li>Upload malicious content or attempt to introduce viruses</li>
+      <li>Use automated bots or scripts to access the App</li>
+      <li>Attempt to bypass any security measures</li>
+      <li>Misuse or abuse the App or its services in any way</li>
+    </ul>
+  </div>
+
+  <!-- Section 4: Content Accuracy -->
+  <div class="section">
+    <div class="section-header">
+      <span class="section-icon">📊</span>
+      <span class="section-title">4. Accuracy of Information</span>
+    </div>
+    <p><strong>4.1 Job and Exam Information</strong></p>
+    <p>ExamTrack provides information about government jobs and exams for informational purposes only. Information may be labeled as OFFICIAL, ESTIMATED, or TENTATIVE.</p>
+    <div class="warning">
+      ⚠️ <strong>Important:</strong> Always verify exam dates, eligibility criteria, vacancy counts, application fees, and other details from official government websites before applying. We are not responsible for any decisions made based solely on information in the app.
+    </div>
+    <p><strong>4.2 Study Material</strong></p>
+    <p>Study material (notes, PYQs, mock tests) is created for preparation purposes only. It is not guaranteed to be 100% accurate or exhaustive. Always refer to the official syllabus from the exam authority.</p>
+    <p><strong>4.3 Official Sources</strong></p>
+    <p>For authoritative information, always refer to official websites:</p>
+    <ul>
+      <li>SSC: ssc.gov.in</li>
+      <li>Railway: indianrailways.gov.in / rrbapply.gov.in</li>
+      <li>IBPS: ibps.in</li>
+      <li>UPSC: upsc.gov.in</li>
+      <li>Punjab Police: punjabpolice.gov.in</li>
+    </ul>
+  </div>
+
+  <!-- Section 5: Account -->
+  <div class="section">
+    <div class="section-header">
+      <span class="section-icon">🔐</span>
+      <span class="section-title">5. Account Responsibility</span>
+    </div>
+    <ul>
+      <li>You are responsible for maintaining the confidentiality of your account credentials</li>
+      <li>You are responsible for all activities that occur under your account</li>
+      <li>Notify us immediately if you suspect any unauthorized access to your account</li>
+      <li>Provide accurate and truthful information during registration</li>
+      <li>We reserve the right to suspend accounts found providing false information</li>
+    </ul>
+  </div>
+
+  <!-- Section 6: Intellectual Property -->
+  <div class="section">
+    <div class="section-header">
+      <span class="section-icon">💡</span>
+      <span class="section-title">6. Intellectual Property</span>
+    </div>
+    <p>All content in ExamTrack — including but not limited to the app design, study notes, question bank, mock tests, graphics, and code — is proprietary to the Developer unless otherwise stated.</p>
+    <p>You may not copy, reproduce, modify, distribute, or create derivative works from any content in the App without explicit written permission from the Developer.</p>
+    <p>Government job listings and exam information are sourced from public government notifications and are in the public domain. ExamTrack adds value through curation, organization, and presentation.</p>
+    <div class="highlight">
+      Any information you enter into the App (job tracking details, marks, notes) remains yours. You grant us a limited license to store and display this content within the App solely to provide the service to you.
+    </div>
+  </div>
+
+  <!-- Section 7: Notifications -->
+  <div class="section">
+    <div class="section-header">
+      <span class="section-icon">🔔</span>
+      <span class="section-title">7. Notifications</span>
+    </div>
+    <p>ExamTrack may send push notifications about new job vacancies, exam dates, admit cards, and result declarations.</p>
+    <p>You can opt-in or opt-out of notifications at any time through your device's notification settings or within the ExamTrack app settings. We do not send promotional messages from third parties.</p>
+  </div>
+
+  <!-- Section 8: Third Party Links -->
+  <div class="section">
+    <div class="section-header">
+      <span class="section-icon">🔗</span>
+      <span class="section-title">8. Third Party Links</span>
+    </div>
+    <p>The App contains links to official government websites for applying to jobs and downloading admit cards or results. These external websites are not controlled by ExamTrack and have their own terms and privacy policies. We are not responsible for their content, accuracy, or availability.</p>
+  </div>
+
+  <!-- Section 9: Disclaimer -->
+  <div class="section">
+    <div class="section-header">
+      <span class="section-icon">⚠️</span>
+      <span class="section-title">9. Disclaimer of Warranties</span>
+    </div>
+    <p>ExamTrack is provided on an <strong>"AS IS"</strong> and <strong>"AS AVAILABLE"</strong> basis without warranties of any kind, either express or implied.</p>
+    <p>The Developer does not warrant that:</p>
+    <ul>
+      <li>The App will be uninterrupted, error-free, or completely secure</li>
+      <li>Job information will always be accurate, complete, or current</li>
+      <li>The App will meet your specific requirements</li>
+      <li>Any errors in the App will be corrected within a specific timeframe</li>
+    </ul>
+    <div class="danger">
+      Use of the App is entirely at your own risk. Always verify job and exam information from official government websites before making any career decisions.
+    </div>
+  </div>
+
+  <!-- Section 10: Limitation of Liability -->
+  <div class="section">
+    <div class="section-header">
+      <span class="section-icon">⚖️</span>
+      <span class="section-title">10. Limitation of Liability</span>
+    </div>
+    <p>To the maximum extent permitted by Indian law, the Developer shall not be liable for:</p>
+    <ul>
+      <li>Any indirect, incidental, or consequential damages</li>
+      <li>Loss of job opportunity due to relying on incorrect information in the App</li>
+      <li>Any loss of data or account information</li>
+      <li>Any damages arising from your inability to use the App</li>
+      <li>Any third party actions or content</li>
+      <li>Any missed application deadlines or exam opportunities</li>
+    </ul>
+    <div class="highlight">
+      <strong>Liability Cap:</strong> The Developer's total cumulative liability to you for any claim arising from your use of ExamTrack shall not exceed <strong>₹1,000 (One Thousand Rupees)</strong>, to the maximum extent permitted by applicable Indian law.
+    </div>
+  </div>
+
+  <!-- Section 11: Indemnification -->
+  <div class="section">
+    <div class="section-header">
+      <span class="section-icon">🛡️</span>
+      <span class="section-title">11. Indemnification</span>
+    </div>
+    <p>You agree to indemnify, defend, and hold harmless the Developer from any claims, damages, losses, liabilities, costs, or expenses (including reasonable legal fees) arising from or related to:</p>
+    <ul>
+      <li>Your violation of these Terms</li>
+      <li>Your use or misuse of the App</li>
+      <li>Your violation of any third party rights</li>
+      <li>Any content you submit through the App</li>
+      <li>Your violation of any applicable Indian law or regulation</li>
+    </ul>
+  </div>
+
+  <!-- Section 12: Termination -->
+  <div class="section">
+    <div class="section-header">
+      <span class="section-icon">🚫</span>
+      <span class="section-title">12. Termination</span>
+    </div>
+    <p>We reserve the right to suspend or terminate your account immediately if you:</p>
+    <ul>
+      <li>Violate these Terms of Service</li>
+      <li>Provide false information during registration</li>
+      <li>Engage in abusive or fraudulent behavior</li>
+      <li>Attempt to harm the App or other users</li>
+    </ul>
+    <p>You may delete your account at any time through the app settings or by contacting us.</p>
+    <p>Upon termination, your right to use the App ceases immediately. Sections 6, 9, 10, 11, and 14 survive termination.</p>
+  </div>
+
+  <!-- Section 13: Changes -->
+  <div class="section">
+    <div class="section-header">
+      <span class="section-icon">📝</span>
+      <span class="section-title">13. Changes to Terms</span>
+    </div>
+    <p>We reserve the right to modify these Terms of Service at any time. When we do:</p>
+    <ul>
+      <li>The "Last Updated" date at the top will change</li>
+      <li>Significant changes will be notified through the App</li>
+      <li>Continued use of ExamTrack after changes means you accept the new terms</li>
+    </ul>
+  </div>
+
+  <!-- Section 14: Governing Law -->
+  <div class="section">
+    <div class="section-header">
+      <span class="section-icon">⚖️</span>
+      <span class="section-title">14. Governing Law and Disputes</span>
+    </div>
+    <p>These Terms of Service are governed by the laws of <strong>India</strong>, including the Information Technology Act, 2000 and the Digital Personal Data Protection Act, 2023.</p>
+    <p>Any dispute arising from these Terms or your use of the App shall be:</p>
+    <ul>
+      <li>First attempted to be resolved through good faith negotiation</li>
+      <li>If unresolved within 30 days, subject to the exclusive jurisdiction of courts in <strong>Punjab, India</strong></li>
+    </ul>
+  </div>
+
+  <!-- Section 15: Severability -->
+  <div class="section">
+    <div class="section-header">
+      <span class="section-icon">📋</span>
+      <span class="section-title">15. Severability and Entire Agreement</span>
+    </div>
+    <p>If any provision of these Terms is found to be invalid or unenforceable by a court of competent jurisdiction, the remaining provisions will continue in full force and effect.</p>
+    <p>These Terms, together with our Privacy Policy, constitute the entire agreement between you and the Developer regarding the use of ExamTrack, and supersede all prior agreements.</p>
+  </div>
+
+  <!-- Section 16: Contact -->
+  <div class="section">
+    <div class="section-header">
+      <span class="section-icon">📧</span>
+      <span class="section-title">16. Contact Us</span>
+    </div>
+    <p>For questions about these Terms of Service:</p>
+    <div class="highlight">
+      <strong>Developer:</strong> Rajan Ghuman<br>
+      <strong>Email:</strong> rajanghuman13@gmail.com<br>
+      <strong>App:</strong> ExamTrack<br>
+      <strong>Location:</strong> Amritsar, Punjab, India<br>
+      <strong>Response time:</strong> Within 7 business days
+    </div>
+  </div>
+
+</div>
+
+<div class="footer">
+  <p>© 2026 ExamTrack. All rights reserved.</p>
+  <p class="email">rajanghuman13@gmail.com</p>
+  <p>Made with ❤️ in Punjab, India</p>
+</div>
+
 </body>
 </html>
